@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sweet Manager</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Sweet Manager</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#team">Team</a></li> 
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="https://sweet-manager-web-application.vercel.app">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Better Management For Your Hotel Business</h1>
+            <p>We transform your hotel management with innovative, user-friendly solutions.</p>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about-us.png" class="img-fluid" height="80%" width="80%" alt="Person with technology" onerror="this.src='/api/placeholder/500/500'; this.onerror=null;">
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>About us</h2>
+            <p>
+              Explore the key features of SweetManager, designed to elevate hotel management and streamline operations effortlessly.
+            </p>
+            <p>
+              We simplify your travel in the country through our IoT technology, configuring and building your comfort from wherever you are!
+            </p>
+            <ul class="mt-4">
+              <li class="d-flex align-items-center mb-3"><i class="bi bi-check2-circle me-2"></i> <span>Role-Based Access: Tailored interfaces and functionalities for managers and workers, ensuring efficient task management.</span></li>
+              <li class="d-flex align-items-center mb-3"><i class="bi bi-check2-circle me-2"></i> <span>Real-Time Notifications: Instant updates and alerts for seamless communication and quick response.</span></li>
+			  <li class="d-flex align-items-center mb-3"><i class="bi bi-check2-circle me-2"></i> <span>Comprehensive Room Management: Easy handling of room details, bookings, and availability for improved operational efficiency.</span></li>
+              <li class="d-flex align-items-center mb-4"><i class="bi bi-check2-circle me-2"></i> <span>IoT Integration: Smart rooms and personalized comfort settings designed to give the customer the best possible experience.</span></li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Proven Results</h2>
+          <p>Transform your hotel management with SweetManager</p>
+        </div>
+        
+        <div class="row">
+          <!-- Left column: Skills bars -->
+          <div class="col-lg-6 skills-content">
+            <h3>Our Strengths</h3>
+            <p class="subtitle">We enhance these key aspects in your hotel:</p>
+            
+            <div class="skills-bars">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Operational Efficiency</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <span class="skill-info">
+                  <span class="skill-name">Statistical Data</span>
+                  <span class="skill-percentage">90%</span>
+                </span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <span class="skill-info">
+                  <span class="skill-name">Total Control</span>
+                  <span class="skill-percentage">88%</span>
+                </span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <span class="skill-info">
+                  <span class="skill-name">Effective Communication</span>
+                  <span class="skill-percentage">85%</span>
+                </span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right column: Results and image -->
+          <div class="col-lg-6 results-content">
+            <div class="results-box">
+              <h3>Results from Our Clients</h3>
+              <p class="subtitle">Hotels working with us have experienced:</p>
+              
+              <div class="results-grid">
+                <div class="result-item">
+                  <div class="result-value">⬆️45%</div>
+                  <div class="result-label">Increase in operating efficiency</div>
+                </div>
+                
+                <div class="result-item">
+                  <div class="result-value">⬆️32%</div>
+                  <div class="result-label">Improved customer satisfaction</div>
+                </div>
+                
+                <div class="result-item">
+                  <div class="result-value">⬇️28%</div>
+                  <div class="result-label">Reduction in management times</div>
+                </div>
+                
+                <div class="result-item">
+                  <div class="result-value">⬆️20%</div>
+                  <div class="result-label">Increase in revenues</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- /Skills Section -->
+
+    <!-- Product Video Section -->
+<section id="product-video" class="product-video section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>About the Product</h2>
+      <p>Watch the video to learn more about our product and how it works.</p>
+    </div>
+    <div class="video-container" style="text-align: center;">
+      <!-- Replace with your actual video link -->
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/VIDEO_ID"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</section><!-- /Product Video Section -->
+
+    <!-- Services Section -->
+<section id="services" class="services section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Our most precious services!</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-activity icon"></i></div>
+          <h4><a href="" class="stretched-link">Subscription & Payment Management</a></h4>
+          <p>Offer flexible subscription plans and efficient payment operations.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+          <h4><a href="" class="stretched-link">Inventory Management</a></h4>
+          <p>Track and manage supplies, inventory levels, and procurement to maintain seamless hotel operations.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-cloud-download icon"></i></div>
+          <h4><a href="" class="stretched-link">IoT Devices</a></h4>
+          <p>Easily configure your smart devices and provide the best comfort to your guests.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-collection icon"></i></div>
+          <h4><a href="" class="stretched-link">Rooms Management</a></h4>
+          <p>Efficiently handle room details, bookings, and availability to streamline operations and enhance guest satisfaction.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <h3 style="font-size: 1.5rem;  color: #B6B6B6">Our three subscription plans are designed to fuel your growth choose the one that empowers your success!</h3>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3 style="color:black !important">BASIC</h3>
+              <h4 style="color: #0066CC"><sup>$</sup>29.99<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Access to IoT Technology management</span></li>
+                <li><i class="bi bi-check"></i> <span>Collaborative administration</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3 style="color:black !important">REGULAR</h3>
+              <h4 style="color: #0066CC"><sup>$</sup>58.99<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Access to IoT Technology management</span></li>
+                <li><i class="bi bi-check"></i> <span>Collaborative administration</span></li>
+                <li><i class="bi bi-check"></i> <span>Access to dynamic dashboards of enterprise management</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3 style="color:black !important">PREMIUM</h3>
+              <h4 style="color: #0066CC"><sup>$</sup>110.69<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Access to IoT Technology management</span></li>
+                <li><i class="bi bi-check"></i> <span>Unlimited collaborative administration</span></li>
+                <li><i class="bi bi-check"></i> <span>Access to dynamic dashboards of enterprise management</span></li>
+                <li><i class="bi bi-check"></i> <span>Maintenament and support 24/7</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Why </span><strong>Us?</strong></h3>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span>What sets SweetManager apart from other hotel management solutions?</h3>
+                <div class="faq-content">
+                  <p>SweetManager distinguishes itself with its user-friendly design and comprehensive role-based access, tailored specifically to enhance hotel operations and improve staff coordination.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span> How does SweetManager improve hotel staff productivity?</h3>
+                <div class="faq-content">
+                  <p>SweetManager enhances productivity by streamlining task management through intuitive tools and role-based access, allowing staff to focus on their responsibilities and operate more efficiently.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span> Why is SweetManager a cost-effective choice for hotels?</h3>
+                <div class="faq-content">
+                  <p>SweetManager offers flexible subscription plans that provide exceptional value, with scalable features and seamless integration options that adapt to your hotel’s needs, ensuring a high return on investment.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Team Section -->
+<section id="team" class="team section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Team</h2>
+    <p>Los Angelitos, an intelligent, brave, and funny team, fearlessly tackles challenges with creativity, humor, and innovative solutions.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/team/mau.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Mauricio Rojas</h4>
+            <span>Executive Team Leader</span>
+            <p>First, solve the problem. Then, write the code.</p>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic"><img src="" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Nelson Serrano</h4>
+            <span>Product Manager</span>
+            <p>Good code is its own best documentation.</p>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic"><img src="" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Manuel Peña</h4>
+            <span>CTO</span>
+            <p>Simplicity is the soul of efficiency.</p>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic"><img src="" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>David Bryan</h4>
+            <span>Accountant</span>
+            <p>Write tests not because you expect bugs, but because you respect your future self.</p>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member d-flex align-items-start">
+          <div class="pic"><img src="" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Aaron Acuña</h4>
+            <span>Analyst</span>
+            <p>Code for readability first; optimization can come later.</p>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Team Section -->
+
+<!-- About the Team Video Section -->
+<section id="team-video" class="team-video section bg-light py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>About the team</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_AQUI" title="About the Team Video"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End About the Team Video Section -->
+
+
+
+    </section><!-- /Team Section -->
+
+    
+    <section id="testimonials" class="testimonials section">
+  <div class="container section-title">
+    <h2>What Do They Say About Us?</h2>
+    <p>Discover what our valued users, and supporters have to say about their experiences with SweetManager</p>
+  </div>
+
+  <div class="container testimonials-container">
+    <div class="testimonials-slider">
+      <div class="testimonials-wrapper">
+        <!-- Testimonial Card 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>SweetManager's real-time updates and comprehensive room management tools have taken our hotel's service quality to the next level. Highly recommend!</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="assets/img/testimonials/testimonials-1.jpg" alt="Diego Tapia">
+            </div>
+            <div class="author-info">
+              <h3>Diego Tapia</h3>
+              <p>San Miguel, Lima</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>The SweetManager team has created an exceptional platform. The attention to detail and user-friendly design make hotel management easier and more effective.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="assets/img/testimonials/testimonials-2.jpg" alt="David Veléz">
+            </div>
+            <div class="author-info">
+              <h3>David Veléz</h3>
+              <p>La Molina, Lima</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>SweetManager exceeded our expectations. The application is both powerful and easy to use, streamlining our operations and improving communication with our staff.</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="assets/img/testimonials/testimonials-3.jpg" alt="Michael Brown">
+            </div>
+            <div class="author-info">
+              <h3>Michael Brown</h3>
+              <p>San Isidro, Lima</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="slider-navigation">
+      <button class="nav-button prev"><span>&lt;</span></button>
+      <button class="nav-button next"><span>&gt;</span></button>
+    </div>
+  </div>
+
+    </section>
+
+  </main>
+
+  <div id="sweetmanager-footer">
+        <div id="sweetmanager-logo-section">
+            <div id="sweetmanager-logo">
+                <img src="assets/img/sweetmanager-icon.png" width="50px"/>
+                <div id="sweetmanager-logo-text">SweetManager</div>
+            </div>
+            <div id="sweetmanager-tagline">Empowering Change through smart technology</div>
+            <div id="sweetmanager-address">
+                3824 Steele Street, Sanborton,<br>
+                New Jersey, 21871
+            </div>
+        </div>
+
+        <div id="sweetmanager-subscription">
+            <div id="sweetmanager-email-form">
+                <input type="email" id="sweetmanager-email-input" placeholder="E-mail">
+                <button id="sweetmanager-subscribe-btn">SUBSCRIBE</button>
+            </div>
+        </div>
+
+        <div id="sweetmanager-links-section">
+            <div id="sweetmanager-links-column-1">
+                <a href="#">About us</a>
+                <a href="#">Vision</a>
+                <a href="#">Partners</a>
+                <a href="#">Testimonials</a>
+            </div>
+            <div id="sweetmanager-links-column-2">
+                <a href="#">Contact us</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+  </div>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
